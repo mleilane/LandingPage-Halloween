@@ -24,6 +24,5 @@ os visitantes. Com uma pitada de criatividade e uma dose de magia, transformei e
 <h2 align="center">🧙 Melhorias Futuras Místicas </h2>
 <p> Nossa jornada apenas começou! Aqui estão algumas ideias para tornar esta página ainda mais assustadora e encantadora:</p>
 
-- **Responsividade:** Aplicar a responsividade da página para garantir uma experiência perfeita em dispositivos de diferentes tamanhos e resoluções de tela.
 - **Mais Conteúdo:** Expandir o conteúdo da página para incluir informações nos campos: Saiba mais, serviçoes e suporte.
 <br>
