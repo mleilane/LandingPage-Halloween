@@ -7,6 +7,9 @@
 <p> Nesta jornada emocionante, desenvolvida durante o "Clube do Portfólio" pelo <a href="https://rodolfomori.com.br/devclub"> Dev Club </a>, mergulhei nas profundezas do HTML e CSS para criar uma experiência única que vai arrepiar
 os visitantes. Com uma pitada de criatividade e uma dose de magia, transformei esta página em um portal para o mundo do Halloween.</p>
 
+<h2 align="center">  🔗 Link para o Deploy:  </h2>
+* Veja a versão ao vivo do projeto aqui:<a href="https://ml-landingpage-halloween.netlify.app/">  Halloween 🎃 </a>
+
 <h2 align="center"> 🎃 Recursos Sombrios </h2>
 
 - **Design Assustador:** Explore uma interface assombrosa que transporta você para uma noite de terror.
