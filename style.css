@@ -79,7 +79,7 @@ section {
 
 .container-left img {
   width: 55%;
-  position: absolute; * Posiciona a imagem absolutamente */
+  position: absolute; /* Posiciona a imagem absolutamente */
   animation: moveAbobora 2s infinite alternate ease-in-out; /*ativa a animação da img feita no @keyframes */
   margin-left: 5rem; /* Margem à esquerda */
 }
