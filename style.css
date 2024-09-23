@@ -1,116 +1,115 @@
 /* estiloza globais */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  transition: 0.3s ease;
+  margin: 0; /*remove a margem padrao*/
+  padding: 0; /*remove prenchimento padrao */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo de largura/altura */
+  font-family: "Poppins", sans-serif; /* define a fonte padrao*/
+  transition: 0.3s ease; /* Adiciona uma transição suave a todas as propriedades */
 }
 
 body {
-  background: linear-gradient(
+  background: linear-gradient( /*define um gradiente de fundo*/
     136.16deg,
     rgba(91, 135, 75, 0.97) 12.91%,
     rgba(12, 55, 32, 0.87) 87.68%
   );
-  width: 100%;
-  min-height: 100vh;
-  padding: 12px 60px;
+  width: 100%; /*ocupa 100% largura */
+  min-height: 100vh; /* Altura mínima de 100% da viewport */
+  padding: 12px 60px; /* Preenchimento interno do body */
 }
 
 header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%; /* Largura total do cabeçalho */
+  display: flex; /* Usa flexbox para layout */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Distribui espaço entre itens */
 }
 
 nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 20px; /* Espaço entre os itens do menu */
 }
 
 .nav-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #f8f8fd;
-  text-decoration: none;
-  position: relative;
+  font-weight: 500; /* peso da fonte*/
+  font-size: 14px; /* tamanho da fonte*/
+  line-height: 16px; /*altura da linha*/
+  color: #f8f8fd; /* cor do texto */
+  text-decoration: none; /* remove sublinhado */
+  position: relative; /* Para posicionar elementos filhos */
 }
 
 .underline:after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  bottom: -3px;
-  left: 0px;
-  position: absolute;
-  background-color: #f8f8fd;
-  transition: 0.3s ease;
+  content: ""; /* Cria um pseudo-elemento */
+  width: 0%; /* Largura inicial */
+  height: 2px; /* Altura da linha de sublinhado */
+  bottom: -3px; /* Posição inferior */
+  left: 0px; /* Posição à esquerda */
+  position: absolute; /* Posiciona absolutamente em relação ao pai */
+  background-color: #f8f8fd; /* Cor da linha */
+  transition: 0.3s ease; /* Transição suave na largura */
 }
 
 .nav-link:hover:after {
-  width: 100%;
+  width: 100%; /* Aumenta a largura ao passar o mouse */
 }
 
 .btn-link {
-  padding: 10px 20px;
-  border: 1px solid #f8f8fd;
-  border-radius: 41px;
+  padding: 10px 20px; /* Preenchimento do botão */
+  border: 1px solid #f8f8fd; /*bordas*/
+  border-radius: 41px;  /* Bordas arredondadas */
 }
 
 .btn-link:hover {
-  opacity: 0.7;
+  opacity: 0.7; /* Muda a opacidade ao passar o mouse */
 }
 
 section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Usa flexbox para o layout da seção */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+  justify-content: center;  /* Centraliza os itens */
 }
 
 .container-left {
-  width: 50%;
-  height: 450px;
+  width: 50%; /* largura*/
+  height: 450px; /*altura fixa*/
   position: relative;
 }
 
 .container-left img {
-  width: 100%;
-  position: absolute;
-  bottom: 60px;
-  left: -50px;
+  width: 55%;
+  position: absolute; * Posiciona a imagem absolutamente */
   animation: moveAbobora 2s infinite alternate ease-in-out; /*ativa a animação da img feita no @keyframes */
+  margin-left: 5rem; /* Margem à esquerda */
 }
 
 .container-left-info {
   position: absolute;
-  bottom: 0px;
-  left: 50px;
-  padding-right: 20px;
-  border-right: 1px solid #a7de93;
+  top: 31rem; /* Posição superior */
+  padding-right: 10px; /* Preenchimento à direita */
+  border-right: 1px solid #a7de93; /*borda a direita*/
   display: flex;
-  flex-direction: column;
-  justify-content: end;
-  height: 85px;
+  flex-direction: column; /* Direção das colunas */
+  justify-content: end; /* Alinha itens ao final */
+  height: 10px; /* altura fixa*/
+  margin-left: 5rem; /* Margem à esquerda */
 }
 
 .container-left-info:after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #a7de93;
-  position: absolute;
-  right: -6px;
-  top: -8px;
+  content: ""; /* Cria um pseudo-elemento */
+  width: 12px; /* Largura do círculo */
+  height: 12px; /* Altura do círculo */
+  border-radius: 50%; /* Bordas arredondadas */
+  background-color: #a7de93; /* Cor do círculo */
+  position: absolute; /* Posiciona absolutamente */
+  right: -6px; /* Posição à direita */
+  top: -8px; /* Posição superior */
 }
 
 .container-left-info p:first-child {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 180%;
   color: #ffffff;
 }
@@ -124,7 +123,7 @@ section {
 
 .container-right {
   margin-top: 30px;
-  width: 420px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -132,17 +131,19 @@ section {
 
 h2 {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 19px;
+  line-height: 20px;
   letter-spacing: 0.03em;
   color: #f8f8fd;
+  margin-bottom: 15px;
 }
 
 .container-right-info p:first-child {
   font-weight: 900;
-  font-size: 68px;
+  font-size: 50px;
   line-height: 109%;
   color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .container-right-info p:last-child {
@@ -150,33 +151,42 @@ h2 {
   font-size: 16px;
   line-height: 180%;
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.8; /* Opacidade */
+  margin-bottom: 15px;
 }
 
+span {
+  font-weight: 700;
+  font-size: 18px;
+}
 .container-actions {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-around; /* Distribui espaço entre os itens */
+  align-items: center;  /* Alinha itens verticalmente ao centro */
 }
 
 .container-actions button {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 22px;
-  text-align: center;
-  color: #303056;
-  background-image: url("./assets/btn-primary.png");
-  background-color: transparent;
-  border: none;
-  padding: 29px 43px;
-  cursor: pointer;
+  font-style: normal; /* Estilo da fonte */
+  font-weight: 600; /* Peso da fonte */
+  font-size: 15px; /* Tamanho da fonte */
+  line-height: 22px; /* Altura da linha */
+  text-align: center; /* Alinha texto ao centro */
+  color: #303056; /* cor do texto*/
+  background-image: url("./assets/btn-primary.png"); /* Imagem de fundo */
+  background-color: transparent; /* Fundo transparente */
+  border: none; /* Remove borda */
+  padding: 29px; /* Preenchimento interno */
+  cursor: pointer; /* Altera o cursor ao passar o mouse */
+  width: 190px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-repeat: no-repeat; /* Não repete a imagem de fundo */
 }
 
 .container-actions button:hover {
-  opacity: 0.8;
-  color: #ffffff;
+  opacity: 0.8; /* Muda a opacidade ao passar o mouse */
+  color: #ffffff; /* Muda a cor do texto ao passar o mouse */
 }
 
 .container-actions a {
@@ -195,8 +205,8 @@ h2 {
 }
 
 .btn-ghost {
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 10px;
   line-height: 22px;
   color: #ffffff;
   display: block;
@@ -206,26 +216,48 @@ h2 {
   background-image: url("./assets/btn-secondary.png");
   padding: 34px 43px;
   cursor: pointer;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
 }
 
 .btn-ghost:hover {
-  color: #303056;
+  color: #303056; /* Muda a cor do texto ao passar o mouse */
 }
 
 /*iniciando animaçao */
 @keyframes moveAbobora {
   from {
-    transform: translate(-5%, -5%) rotate(15deg);
+    transform: translate(-5%, -5%) rotate(15deg); 
   }
   to {
     transform: translate(0, 0) rotate(-15deg);
   }
 }
 
+/*animação do span "grande susto */
+@keyframes fadeColor {
+  0% {
+    opacity: 0; /* Início invisível */
+    color: black; /* Cor inicial */
+  }
+  50% {
+    opacity: 1; /* Totalmente visível */
+    color: rgb(241, 139, 4); /* Muda a cor para destacar */
+  }
+  100% {
+    opacity: 0; /* Retorna a invisibilidade */
+    color: black; /* Cor final */
+  }
+}
+
+span {
+  animation: fadeColor 3s ease-in-out infinite; /* Aplica a animação */
+}
+
 /*iniciando a responsividade */
 @media (max-width: 800px) {
   body {
-    padding: 12px 24px;
+    padding: 8px 16px;
     overflow-x: hidden;
   }
 
@@ -243,17 +275,83 @@ h2 {
     justify-content: center;
   }
 
-  .container-lef img {
-    width: 80%;
-    left: 0;
+  .container-left img {
+    width: 100%;
+    max-width: 80%; /* Limite a largura máxima */
+    margin: auto;
   }
 
   .container-left-info {
-    left: auto;
+    margin: auto;
+    top: 350px;
+    bottom: -3px;
+  }
+
+  .container-left-info p {
+    font-size: 1rem; /* Ajuste o valor conforme necessário */
   }
 
   .container-right {
     width: 100%;
     text-align: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .container-right-info p:first-child {
+    font-size: 22px;
+  }
+
+  .container-right-info p:last-child {
+    font-size: 15px;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  /* Responsividade para telas até 340px */
+  @media (max-width: 340px) {
+    body {
+      padding: 4px 8px; /* Reduzimos o padding */
+    }
+
+    .container-left img {
+      max-width: 100%; /* Ajusta a imagem para 100% */
+      height: auto; /* Mantém a proporção */
+    }
+
+    .container-left-info {
+      margin: 20px 0; /* Ajusta a margem */
+      bottom: auto; /* Remove o posicionamento fixo */
+    }
+
+    .container-right {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 1rem; 
+    }
+
+    .container-right-info p:first-child {
+      font-size: 18px; 
+    }
+
+    .container-right-info p:last-child {
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    .container-actions {
+      flex-direction: column;
+      gap: 8px;
+    }
   }
 }
